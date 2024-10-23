@@ -1,0 +1,37 @@
+.preloader {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  & img{
+    margin: 0 auto;
+  }
+
+  & h2{
+    position: relative;
+    font-family: "Montserrat Alternates";
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+
+    background-image: linear-gradient(90deg, #F6F3BA 0%, #D6EBEB 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    margin: 30px auto 0;
+  }
+
+  & p{
+    position: relative;
+    margin: 0 auto;
+    font-family: "Caveat", cursive;
+    font-size: 24px;
+    font-weight: 600;
+    color: #cacaca;
+  }
+}

@@ -1,0 +1,213 @@
+.sign-selector{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 100px 24px;
+
+  & .ident{
+    & img{
+      margin: 0 auto;
+    }
+
+    & h2{
+      position: relative;
+      font-family: "Montserrat Alternates", cursive;
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: center;
+
+      background-image: linear-gradient(90deg, #F6F3BA 0%, #D6EBEB 100%);
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+      margin: 30px auto 0;
+    }
+
+    & p{
+      position: relative;
+      margin: 0 auto;
+      font-family: "Caveat", cursive;
+      font-size: 24px;
+      font-weight: 600;
+      color: #cacaca;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+  & .trigger_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    & .link_button{
+      font-family: Montserrat Alternates;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18.29px;
+      text-align: center;
+
+      &.button-sign-in{
+        color: #FFFFFF;
+        background: #494358;
+        width: 100%;
+
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 28px;
+        margin-top: 100px;
+      }
+
+      &.button-sign-up{
+        color: #1E232C;
+        background: #FFFFFF;
+        width: 100%;
+
+        height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 28px;
+        margin-top: 16px;
+      }
+
+    }
+  }
+}
+
+.sign-in{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 24px;
+
+  & .ident{
+    & img{
+      margin-bottom: 24px;
+    }
+
+    & p{
+      position: relative;
+      margin: 0 auto;
+      font-family: Montserrat Alternates, cursive;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: -0.01em;
+      text-align: left;
+
+    }
+  }
+
+  & .inputs{
+    margin-top: 32px;
+
+    & input{
+      background: #494358;
+      border-radius: 28px;
+      border: none;
+      outline: none;
+      height: 36px;
+      letter-spacing: 1.2px;
+      color: #fff;
+      text-shadow: none;
+      font-family: Montserrat Alternates, cursive;
+      text-align: left;
+
+      &::placeholder{
+        color: rgba(255,255,255,0.42);
+        text-align: left;
+        font-size: 12px;
+      }
+    }
+
+    & .username .ant-form-item-explain,
+    & .username .ant-form-item-explain-error {
+      text-align: center;
+      font-family: 'Montserrat Alternates';
+      font-size: 14px;
+      color: #ff4d4f;
+      margin: 4px 0;
+    }
+
+    & .login_button{
+      margin-top: 12%;
+      height: 58px;
+    }
+  }
+}
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 24px;
+
+  & .ident{
+    & img{
+      margin-bottom: 24px;
+    }
+
+    & p{
+      position: relative;
+      margin: 0 auto;
+      font-family: Montserrat Alternates, cursive;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 39px;
+      letter-spacing: -0.01em;
+      text-align: left;
+
+    }
+  }
+
+  & .inputs{
+    margin-top: 32px;
+
+    & input{
+      background: #494358;
+      border-radius: 28px;
+      border: none;
+      outline: none;
+      height: 36px;
+      letter-spacing: 1.2px;
+      color: #fff;
+      text-shadow: none;
+      font-family: Montserrat Alternates, cursive;
+      text-align: left;
+
+      &::placeholder{
+        color: rgba(255,255,255,0.42);
+        text-align: left;
+        font-size: 12px;
+      }
+    }
+
+    & .username .ant-form-item-explain,
+    & .username .ant-form-item-explain-error {
+      text-align: center;
+      font-family: 'Montserrat Alternates';
+      font-size: 14px;
+      color: #ff4d4f;
+      margin: 4px 0;
+    }
+
+    & .login_button{
+      margin-top: 12%;
+      height: 58px;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.start_question{
+  padding: 30px 18px 28px;
+  min-height: 100vh;
+  background-image: url("../../assets/image/question_girl.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  & .top_title{
+    padding: 0 48px 0 22px;
+
+    & h2{
+      font-family: Montserrat Alternates, cursive;
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    & p {
+      position: relative;
+      font-family: Montserrat Alternates, cursive;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22.02px;
+      text-align: left;
+      margin-top: 4px;
+
+      &:before{
+        content: " ";
+        position: absolute;
+        bottom: -160px;
+        height: 96px;
+        width: 120px;
+        background-image: url("../../assets/image/arrow_line_question.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.drag {
+  position: fixed;
+  width: 92%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 1;
+  bottom: 0;
+  transition: opacity 0.5s ease;
+  max-width: 500px;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    max-width: 164px;
+    width: 100%;
+    height: 204px;
+    background-image: url("../../assets/image/question_label.png");
+    bottom: 138px;
+    left: 78px;
+
+  }
+
+  &.drag-success {
+    opacity: 0;
+  }
+
+  &-container {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background: #0000006E;
+    backdrop-filter: blur(13.899999618530273px);
+
+    border-radius: 34px;
+    overflow: hidden;
+    bottom: 28px;
+
+    &:before{
+      position: absolute;
+      content: " ";
+      top: 28px;
+      width: 100%;
+      height: 16px;
+      right: 42px;
+      background-image: url("../../assets/image/slide_end_arrow.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+  }
+
+  & p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: Montserrat Alternates, cursive;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 26.74px;
+    top: 20px;
+
+  }
+
+  &-button {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    width: 52px;
+    height: 52px;
+    background-image: url("../../assets/image/slide_arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #357abd;
+    }
+
+    &.in-range {
+      background-color: #5cb85c;
+    }
+
+    &.in-target {
+      background-color: #449d44;
+    }
+  }
+
+  &-target {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+}
